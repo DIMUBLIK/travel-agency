@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<body>
+<div class="title_tours"><h1>Список путевок</h1></div>
+<div class="flip-tours">
+
+    <div class = "flip" >
+        <div class="front">
+            <div class = "img-container"><img src="{%static 'media/mzk.jpg' %}" alt="mzk"></div>
+            <div class="header-flip">
+                <h3 class="title">Город Междуреченск</h3>
+            </div>
+
+        </div>
+    </div>
+    <div class = "flip" >
+        <div class="back">
+            <div class="header-flip header-flip-back">
+                <img src="{%static 'media/mzk.jpg' %}" alt="mzk" class="back-img">
+                <h3 class="name">Город Междуреченск</h3>
+            </div>
+            <ul class="info-list">
+                <li><a href="#"><span>Сплавы </span> </a></li>
+                <li><a href="#"><span>Горнолыжный спорт</span> </a></li>
+                <li><a href="#"><span>Активный отдых на природе</span> </a></li>
+                <li><a href="#"><span>Организация праздников</span></a></li>
+            </ul>
+                <p class=" description">
+                Прекрасный курортный город Кузбасса готов предложить огромное количество развлечений на любой вкус, сезон и кошелек! Оставьте заявку и с вами свяжутся!
+                </p>
+             <a href="{%url 'application' %}"  class="flip-btn">Оставить заявку</a>
+        </div>
+    </div>
+
+
+
+</div>
+</body>
+
+{% endblock content %}

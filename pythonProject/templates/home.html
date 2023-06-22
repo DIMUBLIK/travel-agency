@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+ {% load static %}
+{% block content %}
+<body>
+<div class="title_home"><h1>О нашей компании</h1></div>
+<div class="info_imgs"><img src="{%static 'media/info1.jpg' %}" alt="Илья Тюрин" align="left"></div>
+<div class="about_info">
+    <h3>Мы туристическое агентство, помогающее организовать вашу мечту! <br>
+        Наша компания занимается планированием и реализацией путешествия по Сибири,<br>
+        вы можете посетить прекрасные места, начиная от прекрасного курортного города Междуреченска<br>
+        и заканчивая поездкой на самое большое озеро в России Байкал!<br>
+        Спеши оставить заявку на тур и с тобой свяжутся наши лучшие специалисты!
+    </h3>
+
+</div>
+<div class="found_btn"><a href="{%url 'tours_home' %}" class="home_green" >Найти тур</a></div>
+
+
+</body>
+{% endblock content %}

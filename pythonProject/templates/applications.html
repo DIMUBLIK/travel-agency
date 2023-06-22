@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class ="title_application"> <h1> Форма по добавлению заявки </h1> </div>
+    <div class = "create_application">
+
+        <form method="post" >
+            {% csrf_token %}
+            {{form.Name}}<br>
+            {{form.Place}}<br>
+            {{form.PersonsCount}}<br>
+            {{form.days}}<br>
+            {{form.budget}}<br>
+            {{form.text}}<br>
+            {{form.mail}}<br><br>
+            <span>{{error}}</span>
+
+            <button class="btn_green" type="submit">Оставить заявку</button>
+
+
+        </form>
+    </div>
+
+{%endblock%}

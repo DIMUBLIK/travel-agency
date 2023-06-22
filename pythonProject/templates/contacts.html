@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<head>
+
+</head>
+
+<body>
+<div class="title_flip"><h1>Специалисты</h1></div>
+<div class="flip-container">
+
+    <div class = "flip" >
+        <div class="front">
+            <div class = "img-container"><img src="{%static 'media/iliya.jpg' %}" alt="Илья Тюрин"></div>
+            <div class="header-flip">
+                <h3 class="name">Илья Тюрин</h3>
+                <h4 class="post">Ведущий менеджер</h4>
+            </div>
+        </div>
+    </div>
+    <div class = "flip" >
+        <div class="back">
+
+            <div class="header-flip header-flip-back">
+                <img src="{%static 'media/iliya_back.jpg' %}" alt="Илья Тюрин" class="back-img">
+                <h3 class="name">Илья Тюрин</h3>
+            </div>
+            <ul class="info-list">
+                <li><a href="https://letter.tpu.ru/mail/"><span>Рабочая почта </span>ipt3@tpu.ru </a></li>
+                <li><a href="#"><span>Номер телефона </span>89133015098 </a></li>
+            </ul>
+                <p class=" description">
+                Ведущий специалист по работе с людьми поможет вам подобрать тур и организовать путешествие!
+                </p>
+        </div>
+    </div>
+
+
+
+</div>
+</body>
+
+
+{% endblock content %}

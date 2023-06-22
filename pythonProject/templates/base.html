@@ -1,0 +1,26 @@
+<head>
+    {% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<header>
+
+    <a href="{% url 'home_page' %}" class="logo"><img src="{%static 'media/img.png' %}" ></a>
+    <div class = "right_header">
+        <ul class="menu_top">
+           <li> <a href="{% url 'home_page' %}">Главная</a></li>
+            <li><a href="{% url 'contacts' %}">контакты</a> </li>
+            <li><a href="{%url 'reviews_home'%}">отзывы о компании</a> </li>
+        </ul>
+        <div class="btns">
+            <a href="{%url 'tours_home' %}" class="btn_green">Найти тур</a>
+
+
+        </div>
+    </div>
+
+</header>
+{% block content %} {%endblock%}
+
+</body>

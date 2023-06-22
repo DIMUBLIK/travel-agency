@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class ="title_create"> <h1> Форма по добавлению отзыва </h1> </div>
+    <div class = "create_review">
+
+        <form method="post" >
+            {% csrf_token %}
+            {{form.Name}}<br>
+            {{form.Place}}<br>
+            {{form.full_text}}<br>
+            {{form.date}}<br>
+            {{form.score}}<br><br>
+            <span>{{error}}</span>
+
+            <button class="btn_green" type="submit">Добавить отзыв</button>
+
+
+        </form>
+
+    </div>
+
+{%endblock%}
